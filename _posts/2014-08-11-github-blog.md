@@ -3,9 +3,9 @@ layout: post
 title: "如何使用jekll在github上建立blog"
 description: ""
 category: git 
-tags: [git blog github]
+tags: [git,blog,github]
 ---
-{% include JB/setup %}
+
 
 ### 1.创建Repository
 

@@ -5,7 +5,7 @@ description: ""
 category: xcode
 tags: [xcode,ios]
 ---
-{% include JB/setup %}
+
 
 ### xcode快捷键
 
@@ -101,5 +101,6 @@ tags: [xcode,ios]
 点击`Done`来保存该片段，然后来用用它。
 
 ---
+参考文献
 
-[参考文献](http://www.raywenderlich.com/72021/supercharging-xcode-efficiency)
+[www.raywenderlich.com](http://www.raywenderlich.com/72021/supercharging-xcode-efficiency)
