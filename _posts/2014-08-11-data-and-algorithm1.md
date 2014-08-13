@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "排序算法之快速排序"
+title: "排序算法"
 description: ""
 category: 算法
-tags: [快速排序]
+tags: [快速排序,希尔排序]
 ---
 {% include JB/setup %}
 
 
 
 
-
-快速排序的思路：
+### 快速排序
+快速排序的基本思想：
 
 1. 如果集合S中元素个数是0或1，返回
 2. 在S集合中任意选取一个元素p，称为枢纽元素(pivot)
@@ -77,4 +77,35 @@ tags: [快速排序]
 	        Qsort(A, left, mid-1);
 	        Qsort(A, mid+1, right);
 	    }
+	}
+
+---
+### 希尔排序
+希尔排序又称为缩小增量排序(diminishing increment sort),属于插入排序的一种。
+
+基本思想：
+
+1. 将这个待排记录分割成若然子序列分别进行插入排序
+2. 待整个序列基本有序后，对全体记录进行一次插入排序
+
+实现如下：
+
+	void Shellsort(int A[],int N)
+	{
+    int i,j,Increment,tmp;
+    
+    for (Increment =N/2; Increment >0; Increment/=2) {
+        for (i=Increment; i<N; i++) {
+            tmp =A[i];
+            for (j=i; j>=Increment; j-=Increment) {
+                if (tmp<A[j-Increment]) {
+                    A[j]=A[j-Increment];
+                }else{
+                    break;
+                }
+            }
+            A[j]= tmp;
+        }
+    }
+    
 	}
