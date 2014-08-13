@@ -2,7 +2,7 @@
 layout: post
 title: "xcode技巧"
 description: ""
-category: xcode
+category: iOS
 tags: [xcode,ios]
 ---
 
