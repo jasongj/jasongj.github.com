@@ -23,8 +23,7 @@ tags: [Objective-C,ios]
 ---
 	
 类定义以及成员变量定义部分，框架
-
-		@property  NSString *firstName;	@property  NSString *someString;
+		@property  NSString *firstName; 	@property  NSString *someString;  
 	@property (getter=isFinished) BOOL finished;
 
 
@@ -33,13 +32,11 @@ tags: [Objective-C,ios]
 
 编译后自动产生Get和Set方法
 
-	NSString *firstName = [somePerson firstName];
-		[somePerson setFirstName:@"Johnny"];
+	NSString *firstName = [somePerson firstName];	[somePerson setFirstName:@"Johnny"];
 	
-使用更方便的`Dot syntax`点语法等同于上面
+使用更方便的点语法(Dot syntax)等同于上面
 
-	NSString *firstName = somePerson.firstName;
-		somePerson.firstName = @"Johnny";
+	NSString *firstName = somePerson.firstName;	somePerson.firstName = @"Johnny";
 ### `property`使用下划线前缀访问实例变量---
 下滑线前缀使你清楚的知道你使用的实例变量而不是本地变量	- (void)someMethod {	    NSString *myString = @"An interesting string";	    _someString = myString;	}
 

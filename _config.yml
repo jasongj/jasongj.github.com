@@ -1,4 +1,4 @@
-markdown: rdiscount
+markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title 
 url: http://jasongj.github.io
 name: jun
