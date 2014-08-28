@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Objective学习2"
-categories: ios
-- 
-tags: ios,objective-c
-- 
-
-
+title: "快速入门Objective-c 2"
+description: ""
+category: ios
+tags: [ios,objective-c]
 ---
+
 ### 类别Category
 
 Category常用来定义实例方法和类方法，

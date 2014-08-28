@@ -1,13 +1,11 @@
 ---
 layout: post
 title: "linux命令问题集合"
-categories: linux
-- 
-tags:
-- 
-
-
+description: ""
+category: linux
+tags: [linux]
 ---
+
 ### 修改root密码
 ---
 系统恢复后，无法使用root登录，可以使用以下方法重新设置root密码
